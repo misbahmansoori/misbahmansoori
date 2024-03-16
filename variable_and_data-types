@@ -1,0 +1,77 @@
+#1 SUM OF TWO NO. 
+public class JavaBasics {
+    public static void main(String args[]){
+    int a = 5;
+    int b = 4;
+    int sum = a+b;
+
+    System.out.println(sum);
+    } }
+
+
+#2 CALCULATE SIMPLE INTREST
+
+  public class JavaBasics {
+    public static void main(String args[]){
+    int P = 5;
+    int R = 4;
+    int T = 5;
+    int simple_intrest = (P*R*T)/100;
+
+    System.out.println(simple_intrest);
+    } 
+    }
+
+#3 SUM [BY USER INPUT]
+
+    import java.util.*;
+    public class JavaBasics {
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int sum = a + b;
+    System.out.println(sum);
+    } 
+}
+
+ #4 PRODUCT 
+
+      import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int prod = a * b;
+    System.out.println(prod);
+    } 
+}
+
+#5 AREA OF CIRCLE 
+  
+  import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    float pi = (float)3.14;
+    float r = sc.nextFloat();
+    float area = pi * r *r;
+    System.out.println(area);
+    } 
+
+  
+#6 AVG. OF THREE NO'S
+  
+  import java.util.*;
+public class JavaBasics {
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = sc.nextInt();
+
+    int avg = (a+b+c)/3;
+    System.out.println(avg);
+    } 
+}
