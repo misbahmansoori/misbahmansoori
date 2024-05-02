@@ -1,0 +1,162 @@
+#1 GREATEST OF TWO NUMBERS 
+
+   import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        System.out.print("Enter your 2 numbers");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if(a>b) {
+            System.out.print(a);
+        }
+        else{
+            System.out.print(b);
+        }
+    }
+}
+
+
+
+#2 PRINT IF NO. IS EVEN OR ODD
+
+   import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        System.out.print("Enter your  number");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+ 
+        if(a%2==0) {
+            System.out.print("EVEN");
+        }
+        else{
+            System.out.print("ODD");
+        }
+    }
+}
+
+
+#3  INCOME TAX CALCULATOR 
+
+   import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        System.out.print("Enter your INCOME");
+        Scanner sc = new Scanner(System.in);
+        int income = sc.nextInt();
+        int tax ;
+
+        if(income<500000) {
+            tax = 0;
+            System.out.println(tax);
+        }
+        else if(income>500000 && income <= 1000000) {
+            tax = (int)(income*0.2);
+            System.out.println(tax);
+        }
+        else {
+            tax = (int)(income*0.3);
+            System.out.println(tax);
+        }
+        
+    }
+}
+
+
+#4  Pass or fail
+
+  import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        String marks = number >=33 ? "pass" : "fail";
+        System.out.println(marks);
+    }
+}
+
+
+#5  CALCULATOR
+
+    import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        char operator = sc.next().charAt(0);
+
+        switch(operator) {
+            case'+' : System.out.println(a+b);
+                        break;
+            case'-' : System.out.println(a-b);
+                        break;
+            default : System.out.println("error");
+        }
+    }
+}
+
+
+#6 POSITIVE/NEGATIVE
+
+  import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter your number");
+        int a =  sc.nextInt();
+        if(a<0) {
+            System.out.println("negative");
+        }
+        else if(a>0) {
+            System.out.println("POsitive");
+        }
+        else{
+            System.out.println("your number is 0");
+        }
+    }
+}
+
+
+#7 FEVER OR HEALTHY
+
+   import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        double temp = sc.nextDouble();
+        if(temp>100){
+            System.out.println("you have fever");
+        }
+        else {
+            System.out.println("you are healthy");
+        }
+    }
+}
+
+
+#8 leap year or not
+
+   import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        System.out.println("Enter your year");
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        if(year%4==0) {
+            if(year%100 != 0 || year%400==0) {
+                System.out.println("leap year");
+            } 
+
+        }
+        else {
+            System.out.println("not a leap year");
+        }
+    }
+}
+
+
+
+   
+      
