@@ -1,0 +1,33 @@
+import java.util.*;
+public class Revision {
+    public static int multiply(int a , int b) {
+        int product = a*b; 
+        return product;
+    }
+
+    public static int factorial(int n) {
+        int f =1; 
+        for(int i =1; i<=n ; i++){
+            f= f*i;
+        }
+        return f;
+    }
+
+    public static int bincoeff(int n , int r) {
+       int factn = factorial(n);
+       int factr = factorial(r);
+       int fctnmr = factorial(n-r);
+       int bincoeff = factn/ (factr*fctnmr);
+       return bincoeff;
+    }
+    
+    public static void main(String args[]) {
+        int a =3; 
+        int b= 4;
+        int prod = multiply(a,b);
+        System.out.println(prod);
+        System.out.println(factorial(5));
+        System.out.println(bincoeff(5,2));
+    }
+}
+      
