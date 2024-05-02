@@ -75,3 +75,41 @@ public class JavaBasics {
     System.out.println(avg);
     } 
 }
+
+
+#7 AREA OF SQUARE
+
+    import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        System.out.print("Enter your side of square");
+        Scanner sc = new Scanner(System.in);
+        int side = sc.nextInt();
+        int area = side*side;
+        System.out.print(area);
+    }
+}
+
+
+#8 TOTAL COST OF YOUR ITEMS
+
+
+      import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        System.out.print("Enter cost of your items");
+        Scanner sc = new Scanner(System.in);
+        float pencil = sc.nextFloat();
+        float pen = sc.nextFloat();
+        float eraser = sc.nextFloat();
+        float total = pencil+pen+eraser;
+        System.out.print(total);
+    }
+}
+
+
+
+
+    
+
+
