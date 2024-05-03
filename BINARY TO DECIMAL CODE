@@ -1,0 +1,18 @@
+import java.util.*;
+public class Revision {
+    public static void main(String args[]) {
+        int binnum = 101;
+        int pow = 0 ;
+        int decNum = 0;
+
+        while(binnum>0) {
+            int lastdigit =  binnum%10;
+            decNum = decNum+(lastdigit *(int)Math.pow(2,pow));
+
+            pow++;
+            binnum = binnum/10;
+
+        }
+        System.out.println(decNum);
+    }
+    
