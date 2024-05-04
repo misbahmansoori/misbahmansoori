@@ -4,6 +4,48 @@ public class Revision {
         int product = a*b; 
         return product;
     }
+ public static void avgnum(int a, int b , int c) {
+        int avg = (a+b+c)/3;
+        System.out.println(avg);
+    }
+
+    public static boolean isEven(int n){
+        if(n%2==0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+
+    public static void isPalindrome(int n){
+        int originalNum = n;
+        int reversedNum = 0;
+
+        while(n>0){
+            int lastdigit = n%10;
+            reversedNum = reversedNum*10 + lastdigit;
+            n = n/10;
+        }
+        if(originalNum== reversedNum){
+            System.out.println("it is palindrome");
+        }
+        else {
+            System.out.println("It is not a palindrome");
+        }
+    }
+
+    public static void sumOfInteger(int n){
+        int sum = 0;
+        while(n > 0){
+            int lastdigit = n%10;
+            sum = sum+lastdigit;
+            n = n/10;
+        }
+        System.out.println(sum);
+    }
+
 
     public static int factorial(int n) {
         int f =1; 
@@ -28,6 +70,11 @@ public class Revision {
         System.out.println(prod);
         System.out.println(factorial(5));
         System.out.println(bincoeff(5,2));
+avgnum(1,1,1);
+        System.out.println(isEven(6));
+        isPalindrome(123);
+        sumOfInteger(111);
+       
     }
 }
       
