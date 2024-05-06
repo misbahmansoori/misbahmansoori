@@ -1,0 +1,144 @@
+import java.util.*;
+public class Revision {  
+
+    //UPDATING AN ARRAY
+    public static void update(int marks[]) {
+        for(int i =0 ;i<marks.length ;i++){
+            marks[i] = marks[i]+1;
+        }
+    }
+    
+    //LINEAR SEARCH IN ARRAY
+    public static int linearSearch(int n [] , int key){
+        for(int i = 0 ; i<n.length ;i++){
+            if(n[i] == key){
+                return i;
+            } 
+            }
+            return -1 ;
+        }
+    
+    //LARGEST NUMBER IN AN ARRAY
+    public static int getLargest(int n[]) {
+        int largest = Integer.MIN_VALUE ;
+        for(int i = 0 ; i <n.length ;i++){
+            if(largest< n[i]){
+                largest = n[i];
+            }
+        }
+        return largest;
+    }
+    
+    //BINARY SEARCH IN AN ARRAY 
+    public static int binarySearch(int n[] , int key) {
+        int start = 0 ;
+        int end = n.length-1;
+
+        while(start <= end) {
+            int mid = (start + end)/2;
+            if(n[mid] == key) {
+                return mid;
+            }
+            if(n[mid]<key){
+                start=mid+1;
+            } else {
+                end = mid-1;
+            }
+        }
+        return -1;
+    }
+    
+    //REVERSING AN ARRAY
+    public static void reverse(int number[]){
+        int first = 0 ;
+        int last = number.length-1;
+
+        while(first<last){
+            int temp = number[last];
+            number[last] = number[first];
+            number[first] = temp;
+
+            first++;
+            last--;
+        }
+    }
+
+   //PAIR IN AN ARRAY
+   public static void printPairs(int n[]) {
+    int tp = 0; 
+    for(int i = 0 ;i<n.length ;i++) {
+        int curr = n[i];
+        for(int j = i+1; j<n.length ;j++){
+            System.out.print("(" + curr + "," + n[j] + ")");
+            tp++;
+        }
+        System.out.println();
+    }
+    System.out.println("TOTAL PAIRS = " + tp);
+   }
+
+
+   //PRINTING SUBARRAYS
+   public static void printSubarrays(int n[]) {
+    int ts = 0 ;
+    for(int i = 0 ; i<n.length ; i++) {
+        int start= i ;
+        for(int j = i ; j< n.length ; j++){
+            int end = j;
+            for(int k = start ; k<= end; k++){
+                System.out.print(n[k] + " ");
+            }
+            ts++;
+            System.out.println();
+        }
+        System.out.println();
+    }
+    System.out.println("Total pairs in subarrays is" + ts);
+   }
+    
+    public static void main(String args[]) {
+        //LINEAR SEARCH CALL
+        int n[] = {2,4,6,8,10,12,14,16};
+        int key = 10 ;
+
+        int index = linearSearch(n , key);
+        if(index == -1 ) {
+            System.out.println("not available");
+        } else {
+            System.out.println("Number found" + index);
+        }
+
+        //UPDATING ARRAY CALL
+        int marks[] = {97,98,99};
+        update(marks);
+
+        for(int i=0 ; i<marks.length ;i++){
+            System.out.print(marks[i] + " ");
+        }
+        System.out.println();
+      
+      //LARGEST VALUE CALL
+       System.out.println("Largest value is" + getLargest(n));
+
+     //BINARY SEARCH CALL
+     System.out.println("key found at" + binarySearch(n,key));
+
+
+     //REVERSING AN ARRAY CALL
+     reverse(n);
+     for(int i = 0 ; i<n.length ; i++) {
+        System.out.print(n[i] + " ");
+     }
+     System.out.println();
+
+     //PAIRING OF AN ARRAY CALL
+
+     printPairs(n);
+      
+      //SUBARRAYS CALL
+     printSubarrays(n);
+     
+    
+  }
+}
+      
