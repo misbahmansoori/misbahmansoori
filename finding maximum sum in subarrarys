@@ -1,0 +1,81 @@
+import java.util.*;
+public class Revision {  
+
+
+   //Max_subarrays_sum_print(brute force)
+
+   public static void Max_Subarrays_sum(int n[]) {
+    int currSum = 0 ;
+    int maxSum = Integer.MIN_VALUE ;
+
+    for(int i = 0 ; i<n.length; i++){
+        int start = i ;
+        for(int j = i ; j<n.length ; j++){
+            int end = j;
+            currSum = 0 ;
+            for(int k = start ; k<=end ;k++){
+                currSum = currSum+n[k];
+            }
+            System.out.println(currSum);
+            if(currSum>maxSum){
+                maxSum = currSum;
+            }
+        }
+
+    }
+    System.out.println("max subarrays is " + maxSum);
+   }
+
+
+   //PRINTING SUBARRAYS SUM (SUFFIX SUM METHOD)
+ public static void Max_Subarrays_sum_2(int n[]) {
+    int currSum = 0;
+    int maxSum = Integer.MIN_VALUE;
+    int prefix[] = new int[n.length];
+    prefix[0] = n[0];
+    for (int i = 1; i < n.length; i++) {
+        prefix[i] = prefix[i - 1] + n[i];
+    }
+    for (int j = 0; j < n.length; j++) {
+        for (int k = j; k < n.length; k++) { // Corrected the loop
+            currSum = j == 0 ? prefix[k] : prefix[k] - prefix[j - 1]; // Adjusted calculation of currSum
+            if (maxSum < currSum) {
+                maxSum = currSum;
+            }
+        }
+    }
+    System.out.println("Max sum:  " + maxSum);
+}
+
+    public static void Max_3(int n[]) {
+        int cs = 0;
+        int ms = Integer.MIN_VALUE;
+
+        for(int i = 0 ; i<n.length ; i++) {
+            cs = cs + n[i];
+            if(cs<0) {
+                cs=0;
+            }
+            ms = Math.max(cs,ms);
+        }
+        System.out.println("our max subarrays sum is " + ms);
+    }
+    
+    public static void main(String args[]) {
+        //LINEAR SEARCH CALL
+        int n[] = {2,4,6,8,10,12,14,16};
+    
+    
+     //max_subarrays_sum call
+     Max_Subarrays_sum(n);
+
+     //suffix method 
+     Max_Subarrays_sum_2(n);
+
+
+     //kadanes method
+     Max_3(n);
+    
+  }
+}
+      
