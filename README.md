@@ -3,12 +3,19 @@
 MERN Stack Developer | B.Tech CSE @ CTAE Udaipur | Open-Source Contributor
 </h3>
 
+<p align="center">
+🌐 <strong>Portfolio:</strong> 
+<a href="https://misbahmansoori.github.io/misbah-portfolio/" target="_blank">
+misbahmansoori.github.io/misbah-portfolio
+</a>
+</p>
+
 ---
 
-💻 I’m a developer who believes in **learning by building and contributing**.  
-Currently focused on **MERN stack development**, **open-source projects**, and **DSA with Java**.
+💻 I’m a developer who believes in <strong>learning by building and contributing</strong>.  
+Currently focused on <strong>MERN stack development</strong>, <strong>open-source projects</strong>, and <strong>DSA with Java</strong>.
 
-I started with simple HTML pages and now work on real-world codebases—fixing bugs, improving UX, and building full-stack applications using **React, Node.js, Express, and MongoDB** 🚀
+I started with simple HTML pages and now work on real-world codebases—fixing bugs, improving UX, and building full-stack applications using <strong>React, Node.js, Express, and MongoDB</strong> 🚀
 
 ---
 
