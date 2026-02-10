@@ -1,20 +1,22 @@
 <h1 align="center">Hey there 👋, I'm Misbah Mansoori</h1>
-<h3 align="center">Full-Stack Developer (MERN) | B.Tech CSE @ CTAE Udaipur | Self-Learning Artist 🎨</h3>
+<h3 align="center">
+MERN Stack Developer | B.Tech CSE @ CTAE Udaipur | Open-Source Contributor
+</h3>
 
 ---
 
-💻 I'm a passionate developer who believes in learning by building.  
-Currently focused on **MERN Stack Development** while practicing **Data Structures & Algorithms** with Java.
+💻 I’m a developer who believes in **learning by building and contributing**.  
+Currently focused on **MERN stack development**, **open-source projects**, and **DSA with Java**.
 
-I started my journey with simple HTML pages, and now I’m building and deploying full-stack applications using React, Node, Express, and MongoDB 🚀
+I started with simple HTML pages and now work on real-world codebases—fixing bugs, improving UX, and building full-stack applications using **React, Node.js, Express, and MongoDB** 🚀
 
 ---
 
-### 💡 What I'm currently doing:
-- ✅ Solving DSA problems daily  
-- ✅ Building full-stack MERN projects  
-- ✅ Learning backend deeply (APIs, Auth, Mongo)  
-- ✅ Staying consistent with hands-on coding
+### 💡 What I’m currently doing
+- ✅ Contributing to open-source projects (bug fixes & improvements)  
+- ✅ Building and refining MERN stack applications  
+- ✅ Practicing DSA consistently with Java  
+- ✅ Learning backend systems (APIs, Auth, Databases)
 
 ---
 
@@ -32,8 +34,8 @@ I started my journey with simple HTML pages, and now I’m building and deployin
 ---
 
 ### 🎨 Beyond Code
-I’m also a self-taught artist — painting is my way of staying calm and creative.  
-It often inspires how I design my UI layouts with a balance of logic and aesthetics ✨
+I’m a self-taught artist—painting helps me stay calm and creative.  
+That creativity often reflects in my UI and UX decisions, balancing logic with aesthetics ✨
 
 ---
 
