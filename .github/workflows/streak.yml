@@ -1,0 +1,40 @@
+name: Update Streak Card
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/streak.yml"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download streak SVG
+        run: |
+          mkdir -p assets
+          curl -fsSL \
+            "https://streak-stats.demolab.com/?user=misbahmansoori&theme=radical&hide_border=true&background=0D1117&ring=6D28D9&fire=A78BFA&currStreakLabel=8B5CF6&sideLabels=C4B5FD&dates=E5E7EB&disable_animations=true" \
+            -o assets/github-streak.svg
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-streak.svg
+          if git diff --staged --quiet; then
+            echo "No streak changes"
+          else
+            git commit -m "chore: refresh github streak card"
+            git push
+          fi

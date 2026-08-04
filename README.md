@@ -310,7 +310,7 @@ Mentored learners across the MERN stack and provided hands-on technical support 
   </a>
   &nbsp;
   <a href="https://github.com/misbahmansoori" title="GitHub Streak">
-    <img src="https://streak-stats.demolab.com?user=misbahmansoori&theme=radical&hide_border=true&background=0D1117&ring=6D28D9&fire=A78BFA&currStreakLabel=8B5CF6&sideLabels=C4B5FD&dates=E5E7EB" height="165" alt="GitHub Streak"/>
+    <img src="https://raw.githubusercontent.com/misbahmansoori/misbahmansoori/main/assets/github-streak.svg" height="165" alt="GitHub Streak"/>
   </a>
 </div>
 
