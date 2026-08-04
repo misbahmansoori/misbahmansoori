@@ -327,7 +327,7 @@ Mentored learners across the MERN stack and provided hands-on technical support 
 ## GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=misbahmansoori&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=12&margin-h=12" width="100%" alt="GitHub Trophies"/>
+  <img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=misbahmansoori&theme=onestar&no-frame=true&no-bg=true&column=7&margin-w=12&margin-h=12" width="100%" alt="GitHub Trophies"/>
 </div>
 
 ---
@@ -346,7 +346,7 @@ Mentored learners across the MERN stack and provided hands-on technical support 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/misbahmansoori/misbahmansoori/output/github-contribution-grid-snake-dark.svg"/>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/misbahmansoori/misbahmansoori/output/github-contribution-grid-snake.svg"/>
-    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/misbahmansoori/misbahmansoori/output/github-contribution-grid-snake.svg"/>
+    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/misbahmansoori/misbahmansoori/output/github-contribution-grid-snake-dark.svg"/>
   </picture>
 </div>
 
